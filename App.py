@@ -6,9 +6,9 @@ import joblib
 import joblib
 
 # The "../" steps out of the aiml folder into the main root folder
-model = joblib.load("../titanic_model.pkl")
+model = joblib.load("../titanic_model(1).pkl")
 
-model_features = joblib.load("model_features.pkl")
+model_features = joblib.load("model_features(1).pkl")
 
 st.set_page_config(page_title="Titanic Predictor", page_icon="🚢")
 st.title("🚢 Titanic Survival Predictor")
