@@ -3,7 +3,11 @@ import pandas as pd
 import joblib
 
 # Load saved model and features
-model = joblib.load("titanic_model.pkl")
+import joblib
+
+# The "../" steps out of the aiml folder into the main root folder
+model = joblib.load("../titanic_model.pkl")
+
 model_features = joblib.load("model_features.pkl")
 
 st.set_page_config(page_title="Titanic Predictor", page_icon="🚢")
