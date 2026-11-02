@@ -3,10 +3,15 @@ import pandas as pd
 import joblib
 
 # Load saved model and features
-import joblib
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_PATH = os.path.join(BASE_DIR, "titanic_model(1).pkl")
+
+model = joblib.load(MODEL_PATH)
 # The "../" steps out of the aiml folder into the main root folder
-model = joblib.load("../titanic_model(1).pkl")
+
 
 model_features = joblib.load("model_features(1).pkl")
 
